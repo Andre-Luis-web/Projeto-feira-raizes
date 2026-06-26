@@ -1,0 +1,28 @@
+:root {
+    --cor-primaria: #03260c;
+    --cor-secundaria: #fdb53b;
+    --cor-terciaria: #bf2e21;
+}
+
+.custom-button-primary {
+    color: var(--cor-secundaria);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.custom-button-primary:hover {
+    background-color: var(--cor-primaria);
+}
+
+.custom-button-secundary {
+    background-color: var(--cor-secundaria);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button-secundary:hover {
+    background-color: var(--cor-terciaria);
+}
