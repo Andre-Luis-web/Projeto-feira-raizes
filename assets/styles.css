@@ -1,5 +1,6 @@
 :root {
     --cor-primaria: #03260c;
+    --cor-alternativa: #184017;
     --cor-secundaria: #fdb53b;
     --cor-terciaria: #bf2e21;
     --cor-fundo: #f2d09153;
@@ -13,7 +14,7 @@
 }
 
 .custom-button-primary:hover {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-alternativa);
 }
 
 .custom-button-secundary {
@@ -35,4 +36,14 @@
 .border-custom {
     border: 2px solid var(--cor-primaria);
     border-radius: 10px;
+}
+
+.bg-custom-primary {
+    background-color: var(--cor-primaria);
+}
+
+.card-img-top {
+    height: 250px;
+    object-position: center 15%;
+    object-fit: cover;
 }
