@@ -31,3 +31,8 @@
 .bg-background {
     background-color: var(--cor-fundo);
 }
+
+.border-custom {
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+}
