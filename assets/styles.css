@@ -47,3 +47,7 @@
     object-position: center 15%;
     object-fit: cover;
 }
+
+.text-custom-primary {
+    color: var(--cor-primaria);
+}
