@@ -13,7 +13,7 @@
 
 <body class="bg-background">
     <header>
-        <div>
+        <div><!--  div com elemnto nav classe navbar para o cabeçalho da página, com a logo e os links de navegação -->
             <nav class="navbar navbar-light bg-custom-primary pe-3 ps-3">
                 <a href="">
                     <img class="navbar-brand" src="assets/images/logo-cor-invertida-removebg-preview.png" width="80" alt="Logo da Feira Raízes">
@@ -34,6 +34,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-white btn custom-button-secundary p-2" href="">Próxima feira</a>
                     </li>
+                    <!-- a classe custom-button-secundary é personalizada e criada exclusivamente para os botões de navegação da página. -->
                 </ul>
             </nav>
         </div>
@@ -42,6 +43,7 @@
 
     <main>
         <section class="p-4" id="home">
+            <!-- div com classe container-fluid usado para criar um container que ocupa toda a largura da tela, permitindo que o conteúdo se ajuste de forma responsiva em diferentes tamanhos de tela. -->
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-6 text-center text-md-start">
@@ -56,42 +58,86 @@
             </div>
         </section>
 
+        
         <section class="p-4" id="produtores">
+            <!-- essa sessão de produtores usa uma div com container fluid para ocupar totalmente o espaço igual a div do banner, porem,  -->
+            <!-- dentro dessa div há outra div com classe de colunas para organizar os produtores em colunas, e cada produtor é representado por um card com imagem, nome, descrição e localização. A sessão também inclui um link para ver todos os produtores e produtos disponíveis na feira. -->
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start">
+                    <!-- uso de article para semântica do html, pois o conteúdo é um artigo sobre os produtores da feira. -->
+                    <article class="col-md-6 text-center text-md-start">
                         <h2 class="display-10 fw-bold">Nossos Produtores</h2>
                         <p class="lead">Conheça os produtores que fazem parte da Feira Raízes e descubra a variedade de produtos que eles oferecem.</p>
-                    </div>
+                    </article>
                     
                     <div class="col-md-6 text-right text-md-end d-flex justify-content-center justify-content-md-end align-items-center">
                         <a class="link-success" href="produtores_produtos.html" target="_blank">Ver todos</a>
                     </div>
                 </div> 
             </div>
+            <!-- div com classe de row para colunas e mt-4 para adicionar margem superior, e dentro dessa div há várias colunas representando os produtores da feira. 
+             Cada coluna contém um card com imagem, nome, descrição e localização do produtor. A classe text-center é usada para centralizar o conteúdo dentro de cada coluna, e a classe mb-4 adiciona margem inferior para espaçamento entre os cards. 
+             A classe h-100 é usada para garantir que todos os cards tenham a mesma altura, independentemente do conteúdo interno. -->
             <div class="row  mt-4">
                 <div class="col-md-2 text-center mb-4">
-                    <div class="card border-custom h-100">
+                    <article class="card border-custom h-100">
                         <img src="assets/images/Seu-carlos.jpg" class="card-img-top aspect-ratio-1-1 object-fit-cover" alt="imagem de seu Carlos">
                         <div class="card-body">
                             <h5 class="card-title">Seu Carlos</h5>
                             <p class="card-text">Produtor de frutas tropicais</p>
-                            <p class="card-text text-custom-primary fw-bold">Lagoa-Nova - RN</p>
                         </div>
-                    </div>
+                        <div class="card-footer">
+                            <p class="text-custom-primary fw-bold"><img src="assets/images/map-pin.svg" class="img-fluid" alt="pin"> Lagoa-Nova - RN</p>    
+                        </div>
+                    </article>
                 </div>
                 <div class="col-md-2 text-center mb-4">
-                    <div class="card border-custom h-100">
-                    <img src="assets/images/zé-da-manga.png" class="card-img-top image-fluid object-fit-cover"  alt="imagem de Zé da Manga">
-                    <div class="card-body">
-                        <h5 class="card-title">Zé da Manga</h5>
-                        <p class="card-text">Produtor de mangas</p>
-                        <p class="card-text text-custom-primary fw-bold">Natal - RN</p>
+                    <article class="card border-custom h-100">
+                        <img src="assets/images/zé-da-manga.png" class="card-img-top image-fluid object-fit-cover"  alt="imagem de Zé da Manga">
+                        <!-- uilizei as classes de card para melhorar a semântica e por já haver uma estrutura de card pronta no bootstrap. -->
+                        <div class="card-body">
+                            <h5 class="card-title">Zé da Manga</h5>
+                            <p class="card-text">Produtor de mangas</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-custom-primary fw-bold"><img src="assets/images/map-pin.svg" class="img-fluid" alt="pin"> Natal - RN</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-2 text-center mb-4">
+                    <article class="card border-custom h-100">
+                        <img src="assets/images/edilson.png" class="card-img-top image-fluid object-fit-cover"  alt="imagem de Edilson">
+                        <!-- uilizei as classes de card para melhorar a semântica e por já haver uma estrutura de card pronta no bootstrap. -->
+                        <div class="card-body">
+                            <h5 class="card-title">Edilson</h5>
+                            <p class="card-text">Produtor verduras orgânicas</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-custom-primary fw-bold"><img src="assets/images/map-pin.svg" class="img-fluid" alt="pin"> Cerro-Corá - RN</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-2 text-center mb-4">
+                    <article class="card border-custom h-100">
+                        <img src="assets/images/dona-narcisa.png" class="card-img-top image-fluid object-fit-cover"  alt="imagem de Dona Narcisa">
+                        <!-- uilizei as classes de card para melhorar a semântica e por já haver uma estrutura de card pronta no bootstrap. -->
+                        <div class="card-body">
+                            <h5 class="card-title">Dona Narcisa</h5>
+                            <p class="card-text">Produtora de hortaliças</p>
+                        </div>
+                        <div class="card-footer justify-content-center">
+                            <p class="text-custom-primary fw-bold"><img src="assets/images/map-pin.svg" class="img-fluid" alt="pin"> Recife - PE</p>  
+                        </div>
+                    </article>
+                </div>
+
+                <!-- card para próxima feira com offset-md-2, isso faz com que o card seja deslocado para a direita -->
+                <div class="col-md-2 offset-md-2 justify-content-end mb-4 text-center bg-primary rounded-3">
+                    <div class="card">
+                        <h3>Próxima Feira</h3>
                     </div>
                 </div>
             </div>
-
-                
 
         </section>
 
