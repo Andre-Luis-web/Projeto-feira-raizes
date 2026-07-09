@@ -13,6 +13,10 @@
     font-size: 16px;
 }
 
+.text-custom-secundary {
+    color: var(--cor-secundaria);
+}
+
 .custom-button-primary:hover {
     background-color: var(--cor-alternativa);
 }
