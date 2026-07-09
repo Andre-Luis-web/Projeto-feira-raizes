@@ -6,6 +6,13 @@
     --cor-fundo: #f2d09153;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .custom-button-primary {
     color: var(--cor-secundaria);
     border: none;
@@ -44,6 +51,10 @@
 
 .bg-custom-primary {
     background-color: var(--cor-primaria);
+}
+
+.bg-custom-primary-opacity {
+    background-color: #03260c60;
 }
 
 .card-img-top {

@@ -13,8 +13,8 @@
 
 <body class="bg-background">
     <header>
-        <div><!--  div com elemnto nav classe navbar para o cabeçalho da página, com a logo e os links de navegação -->
-            <nav class="navbar navbar-light bg-custom-primary pe-3 ps-3">
+        <div class="bg-custom-primary"><!--  div com elemnto nav classe navbar para o cabeçalho da página, com a logo e os links de navegação -->
+            <nav class="navbar navbar-light pe-3 ps-3">
                 <a href="">
                     <img class="navbar-brand" src="assets/images/logo-cor-invertida-removebg-preview.png" width="80" alt="Logo da Feira Raízes">
                 </a>
@@ -42,17 +42,17 @@
     </header>
 
     <main>
-        <section class="mt-0 p-0" id="home" style="background-image: url('assets/images/banner-fundo.png'); background-size: cover; background-position: center;">
+        <section class="mt-0 p-0 shadow" id="home" style="background-image: url('assets/images/banner-fundo.png'); background-size: cover; background-position: center;">
             <!-- div com classe container-fluid usado para criar um container que ocupa toda a largura da tela, permitindo que o conteúdo se ajuste de forma responsiva em diferentes tamanhos de tela. -->
-            <div class="container-fluid" style="backdrop-filter: blur(10px);">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-6 ps-3 text-center text-md-start mb-5">
-                        <h2 class="display-2 fw-bold text-custom-secundary shadow">Feira Raízes</h2>
-                        <p class="lead">A melhor feira de produtos naturais da região! Sempre com os melhores produtos frutíferos e orgânicos.</p>
+            <div class="d-flex align-items-center" style="backdrop-filter: blur(10px);">
+                <div class="row">
+                    <div class="col-md-6 p-4 text-center text-md-start bg-custom-primary-opacity align-content-center">
+                        <h2 class="display-2 fw-bold text-custom-secundary">Feira Raízes</h2>
+                        <p class="lead text-white">A melhor feira de produtos naturais da região! Sempre com os melhores produtos frutíferos e orgânicos.</p>
                         <a href="#produtores" class="btn custom-button-secundary text-white d-inline-flex align-items-center"><img class="me-2 img-fluid" width="25" src="assets/images/vegan.svg" alt=""> Ver Produtores</a>
                     </div>
-                    <div class="col-md-6 pe-0">
-                        <img class="d-block shadow-sm img-fluid" src="assets/images/banner.png" alt="Banner da Feira Raízes">
+                    <div class="col-md-6 p-0">
+                        <img class="img-fluid" src="assets/images/banner.png" alt="Banner da Feira Raízes">
                     </div>
                 </div> 
             </div>
@@ -144,7 +144,7 @@
                             </div>
 
                             <div class="d-flex justify-content-center align-items-center text-center mt-4 border-2 rounded-2 p-3 flex-wrap">
-                                <p class="display-6 fw-bold text-break">13/Jun</p>
+                                <p class="fs-2 fw-bold text-break">13/Jun</p>
                             </div>
                                 
                         </div>
@@ -173,7 +173,7 @@
     <footer id="sobre">
         <div class="bg-custom-primary text-white pe-3 ps-3 mb-0">
             <div class="row pt-4">
-                <div class="col-4 bg-info">
+                <div class="col-4">
                     <h3 class="display-6 fw-bold">Feira Raízes</h3>
                     <p class="lead fs-5">Somos um movimento que busca uma alimentação saudável Para toda a comunidade.</p>
                 </div>
