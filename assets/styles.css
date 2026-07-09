@@ -35,7 +35,7 @@
 
 .border-custom {
     border: 2px solid var(--cor-primaria);
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .bg-custom-primary {
