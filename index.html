@@ -62,25 +62,23 @@
         <section class="p-4" id="produtores">
             <!-- essa sessão de produtores usa uma div com container fluid para ocupar totalmente o espaço igual a div do banner, porem,  -->
             <!-- dentro dessa div há outra div com classe de colunas para organizar os produtores em colunas, e cada produtor é representado por um card com imagem, nome, descrição e localização. A sessão também inclui um link para ver todos os produtores e produtos disponíveis na feira. -->
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- uso de article para semântica do html, pois o conteúdo é um artigo sobre os produtores da feira. -->
-                    <article class="col-md-4 text-center text-md-start">
-                        <h2 class="display-10 fw-bold">Nossos Produtores</h2>
-                        <p class="lead">Conheça os produtores que fazem parte da Feira Raízes e descubra a variedade de produtos que eles oferecem.</p>
-                    </article>
-                    
-                    <div class="col-md-4 text-right text-md-end d-flex justify-content-center justify-content-md-end align-items-center">
-                        <a class="link-success" href="produtores_produtos.html" target="_blank">Ver todos</a>
-                    </div>
-                </div> 
+            <div class="row mt-4">
+                <!-- uso de article para semântica do html, pois o conteúdo é um artigo sobre os produtores da feira. -->
+                <article class="col-md-4 text-center text-md-start">
+                    <h2 class="display-10 fw-bold">Nossos Produtores</h2>
+                    <p class="lead">Conheça os produtores que fazem parte da Feira Raízes e descubra a variedade de produtos que eles oferecem.</p>
+                </article>
+                
+                <div class="col-md-4 text-right text-md-end d-flex justify-content-center justify-content-md-end align-items-end">
+                    <a class="link-success pe-1" href="produtores_produtos.html" target="_blank">Ver todos</a>
+                </div>
             </div>
             <!-- div com classe de row para colunas e mt-4 para adicionar margem superior, e dentro dessa div há várias colunas representando os produtores da feira. 
              Cada coluna contém um card com imagem, nome, descrição e localização do produtor. A classe text-center é usada para centralizar o conteúdo dentro de cada coluna, e a classe mb-4 adiciona margem inferior para espaçamento entre os cards. 
              A classe h-100 é usada para garantir que todos os cards tenham a mesma altura, independentemente do conteúdo interno. -->
 
              <!-- decidi usar col-6 para agrupar de 2 em 2 cards em telas menores, e col-md-2 para exibir 5 cards em telas maiores, mantendo a consistência visual e o espaçamento adequado entre os elementos da página. -->
-            <div class="row mt-4">
+            <div class="row mt-4 h-100">
                 <div class="col-6 col-md-2 text-center mb-4">
                     <article class="card border-custom h-100">
                         <img src="assets/images/Seu-carlos.jpg" class="card-img-top aspect-ratio-1-1 object-fit-cover" alt="imagem de seu Carlos">
@@ -171,15 +169,40 @@
     </main>
 
     <footer id="sobre">
+        <!-- fiz o uso de col-md para em telas grandes os elementos ficarem separados e apresentáveis. Ao diminuir a tela todos irão ficar empilhados como blocos para melhor visualização -->
         <div class="bg-custom-primary text-white pe-3 ps-3 mb-0">
             <div class="row pt-4">
-                <div class="col-4">
+                <div class="col-md-4">
                     <h3 class="display-6 fw-bold">Feira Raízes</h3>
                     <p class="lead fs-5">Somos um movimento que busca uma alimentação saudável Para toda a comunidade.</p>
                 </div>
 
-                <div class="col-4">
-                    <h3>Informações</h3>
+                <div class="col-md-2">
+                    <h3 class="text-break">Navegação</h3>
+                    <div class="d-flex gap-4 flex-wrap">
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-white text-decoration-none">Início</a></li>
+                            <li><a href="#sobre" class="text-white text-decoration-none">Sobre</a></li>
+                            <li><a href="#contato" class="text-white text-decoration-none">Receitas</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#produtores" class="text-white text-decoration-none">Notícias</a></li>
+                            <li><a href="#produtores" class="text-white text-decoration-none">Como funciona</a></li>
+                            <li><a href="#produtores" class="text-white text-decoration-none">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="text-break">Fale Conosco</h3>
+                    <div class="d-flex flex-wrap">
+                        <ul class="list-unstyled">
+                            <li><p><img src="assets/images/phone.svg" class="align-bottom pe-1" alt="Telefone"> (84) 99909-2004</p></li>
+                            <li><p><img src="assets/images/mail.svg" class="align-bottom pe-1" alt="Email"> contato@feiraraizes.com.br</p></li>
+                            <li><p><img src="assets/images/instagram.svg" class="align-bottom pe-1" alt="">@feiraraizes</p></li>
+                        </ul>
+
+                    </div>
                 </div>
 
             </div>
