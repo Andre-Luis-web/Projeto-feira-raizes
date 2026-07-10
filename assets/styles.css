@@ -53,6 +53,10 @@ html, body {
     background-color: var(--cor-primaria);
 }
 
+.bg-custom-secundary {
+    background-color: var(--cor-secundaria);
+}
+
 .bg-custom-primary-opacity {
     background-color: #03260c60;
 }
