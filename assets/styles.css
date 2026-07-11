@@ -14,10 +14,12 @@ html, body {
 }
 
 .custom-button-primary {
-    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .text-custom-secundary {
@@ -25,7 +27,8 @@ html, body {
 }
 
 .custom-button-primary:hover {
-    background-color: var(--cor-alternativa);
+    background-color: var(--cor-terciaria);
+    color: white;
 }
 
 .custom-button-secundary {
@@ -60,6 +63,16 @@ html, body {
 .bg-custom-primary-opacity {
     background-color: #03260c60;
 }
+
+.bg-custom-secundary-light {
+    background-color: #eca22262;
+    transition: 0.3s ease-out;
+}
+
+/* .bg-custom-secundary-light:hover {
+    background-color: var(--cor-terciaria);
+    color: white;
+} */
 
 .card-img-top {
     height: 250px;
