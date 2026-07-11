@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Produtos e Produtores</title>
+</head>
+<body class="bg-background">
+    <header>
+        <div class="bg-custom-primary"><!--  div com elemnto nav classe navbar para o cabeçalho da página, com a logo e os links de navegação -->
+            <nav class="navbar navbar-light pe-3 ps-3">
+                <a href="">
+                    <img class="navbar-brand" src="assets/images/logo-cor-invertida-removebg-preview.png" width="80" alt="Logo da Feira Raízes">
+                </a>
+                <ul class="navbar-nav flex-row gap-3 flex-wrap">
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-primary p-2" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-primary p-2" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-primary p-2" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-primary p-2" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-secundary p-2" href="">Próxima feira</a>
+                    </li>
+                    <!-- a classe custom-button-secundary é personalizada e criada exclusivamente para os botões de navegação da página. -->
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <section id="produtos">
+            <div class="row g-0">
+                <div class="col-6 col-md-9 p-4">
+                    <h1 class="fw-bold">Produtos e produtores</h1>
+                    <p class="lead fs-4">Alimentos regionais com sabor de tradicionalidade!</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="bg-custom-secundary-light d-flex justify-content-center p-2 h-100 rounded-3">
+                        <article class="border-custom-card w-100">
+                            <div class="d-flex text-center justify-content-center align-items-center pt-4">
+                                <h3 class="text-break"><img src="assets/images/sprout.svg" class="me-2 mb-2" alt="">Da estação</h3>
+                            </div>
+    
+                            <div class="px-2 text-center">
+                                <p class="fs-5 fw-semibold">Produtos frescos colhidos no melhor tempo do ano</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- navegação -->
+                 <div class="col-md-9">
+                    <div class="px-4 d-flex align-items-center gap-3 flex-wrap">
+                        <a href="" class="btn custom-button-primary"><img src="assets/images/window.svg" class="align-bottom me-2" alt="">Todos</a>
+                        <a href="" class="btn custom-button-secundary-light"><img src="assets/images/apple.svg" class="align-bottom me-2" alt="">Frutas</a>
+                        <a href="" class="btn custom-button-secundary-light"><img src="assets/images/bean.svg" class="align-bottom me-2" alt="">Feijão</a>
+                        <a href="" class="btn custom-button-secundary-light"><img src="assets/images/leafy-green.svg" class="align-bottom me-2" alt="">Hortaliças</a>
+                    </div>
+                 </div>
+
+                 <div class="col-md-3 bg-custom-secundary-light rounded-3 p-3">
+                    <h4>Nossos Produtores</h4>
+                    
+                    <div class="border-bottom border-2 border-secondary pb-2">
+                        <div class="d-flex">
+                           <div>
+                               <img src="assets/images/zé-da-manga.png" class="img-fluid object-fit-cover rounded-circle" style="width: 8rem" alt="">
+                           </div>
+                           
+                           <div class="px-4">
+                                <p class="fs-5 fw-semibold mb-1">Zé da Manga</p>
+                                <p>Produtor de mangas à mais de 20 anos</p>
+                                <small class="fw-semibold"><img src="assets/images/map-pin.svg" class="me-1 align-bottom" alt="">Natal - RN</small>
+                                <div class="d-flex justify-content-end mt-3">
+                                    <a href="" class="btn custom-button-primary">Ver produtos</a>
+                                </div>
+                           </div>
+                        </div>                        
+                    </div>
+                    
+                 </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="sobre">
+        <div class="bg-custom-primary text-white pe-3 ps-3 mb-0">
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <h3 class="display-6 fw-bold">Feira Raízes</h3>
+                    <p class="lead fs-5">Somos um movimento que busca uma alimentação saudável Para toda a comunidade.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="text-break">Navegação</h3>
+                    <div class="d-flex gap-4 flex-wrap">
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-white text-decoration-none">Início</a></li>
+                            <li><a href="#sobre" class="text-white text-decoration-none">Sobre</a></li>
+                            <li><a href="#contato" class="text-white text-decoration-none">Receitas</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#produtores" class="text-white text-decoration-none">Notícias</a></li>
+                            <li><a href="#produtores" class="text-white text-decoration-none">Como funciona</a></li>
+                            <li><a href="#produtores" class="text-white text-decoration-none">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="text-break">Fale Conosco</h3>
+                    <div class="d-flex flex-wrap">
+                        <ul class="list-unstyled">
+                            <li><p><img src="assets/images/phone.svg" class="align-bottom pe-1" alt="Telefone"> (84) 99909-2004</p></li>
+                            <li><p><img src="assets/images/mail.svg" class="align-bottom pe-1" alt="Email"> contato@feiraraizes.com.br</p></li>
+                            <li><p><img src="assets/images/instagram.svg" class="align-bottom pe-1" alt="">@feiraraizes</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

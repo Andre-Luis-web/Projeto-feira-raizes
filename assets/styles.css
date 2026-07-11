@@ -43,6 +43,19 @@ html, body {
     background-color: var(--cor-terciaria);
 }
 
+.custom-button-secundary-light {
+    background-color: #eca2224b;
+    border: 2px solid gray;
+    padding: 8px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button-secundary-light:hover {
+    background-color: var(--cor-terciaria);
+    color: white;
+}
+
 .bg-background {
     background-color: var(--cor-fundo);
 }
@@ -82,4 +95,9 @@ html, body {
 
 .text-custom-primary {
     color: var(--cor-primaria);
+}
+
+.border-custom-card {
+    border: 0.1rem dashed var(--cor-terciaria);
+    border-radius: 4px;
 }
