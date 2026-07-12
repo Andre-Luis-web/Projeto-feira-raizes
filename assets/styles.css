@@ -101,3 +101,8 @@ html, body {
     border: 0.1rem dashed var(--cor-terciaria);
     border-radius: 4px;
 }
+
+.bg-custom-secundary-low {
+    background-color: #fceed6;;
+    color: var(--cor-alternativa);
+}
