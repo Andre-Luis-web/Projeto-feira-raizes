@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Participe - Feira Raízes</title>
+</head>
+<body class="bg-background">
+    <header id="home">
+        <div class="bg-custom-primary"><!--  div com elemnto nav classe navbar para o cabeçalho da página, com a logo e os links de navegação -->
+            <nav class="navbar navbar-light pe-3 ps-3">
+                <a href="">
+                    <img class="navbar-brand" src="assets/images/logo-cor-invertida-removebg-preview.png" width="80" alt="Logo da Feira Raízes">
+                </a>
+                <ul class="navbar-nav flex-row gap-3 flex-wrap">
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-primary p-2" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-primary p-2" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-primary p-2" href="#home">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-primary p-2" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn custom-button-secundary p-2" href="index.html#proxima">Próxima feira</a>
+                    </li>
+                    <!-- a classe custom-button-secundary é personalizada e criada exclusivamente para os botões de navegação da página. -->
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <section id="participe">
+            <div class="row my-4 mx-1">
+                <!-- parte do calendário e informações sobre a feira -->
+                <div class="col-md-6">
+                    <!-- banner introdutório -->
+                    <div class="bg-custom-secundary-light p-3 rounded-3 mb-4">
+                        <h1 class="display-4 fw-bold">Visite ou participe</h1>
+                        <p class="display-6">Valorize a tradição e cultura local.</p>
+                        <p class="lead">Descubra o verdadeiro sabor dos alimentos frescos, artesanais e agroecológicos direto de quem produz. Quer ir além? Torne-se um expositor e venha fortalecer o nosso movimento de cuidado, produção consciente e transformação local.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="" class="btn custom-button-primary"><img src="assets/images/users.svg" class="align-bottom me-1" alt=""> Seja expositor</a>
+                            <a href="#tabela" class="btn custom-button-primary-outline"><img src="assets/images/plant.svg" class="align-bottom me-1 m-0" style="height: 1.3rem;" alt=""> Visite a feira</a>
+                        </div>
+
+                    </div>
+                    
+                    
+                    <article class="bg-custom-secundary-light p-3 rounded-3" id="tabela">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/calendar-days.svg" class="me-3" style="height: 2.7rem;" alt="">
+                            <h3 class="mb-0">Horários da feira</h3>
+                        </div>
+                        <!-- tabela de horários -->
+                        <div class="rounded-3 overflow-hidden">
+                            <table class="table-custom-primary table table-hover mb-0">
+                                <thead class="bg-custom-primary text-white">
+                                    <tr>
+                                        <th>Dia</th>
+                                        <th>Data</th>
+                                        <th>Horário</th>
+                                        <th>Atividades</th>
+                                    </tr>
+                                </thead>
+    
+                                <tbody class="table-custom-primary">
+                                    <tr>
+                                        <td>Quarta-feira</td>
+                                        <td>15/07/2026</td>
+                                        <td>14hr às 18hr</td>
+                                        <td>Organização do espaço</td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>Sexta-feira</td>
+                                        <td>17/07/2026</td>
+                                        <td>18hr às 21hr</td>
+                                        <td>Abertura da feira com música local</td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>Sábado</td>
+                                        <td>18/07/2026</td>
+                                        <td>14hr as 20hr </td>
+                                        <td>Feira completa com todos os produtores e sorteio ao final</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="assets/images/circle-alert.svg" class="me-2" alt="">
+                                <p class="mb-0">Acompanhe nossas redes para não ficar de fora de cada momento!</p>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <div class="row mt-4">
+                        <article class="col-md-6">
+
+                            <div class="row g-0 h-100">
+                                <div class="bg-custom-secundary-light rounded-start-3 p-3 col-8">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/map-pin.svg" class=" align-bottom me-3" style="height: 2rem;" alt="">
+                                        <h3 class="mb-0 text-break">Onde estamos</h3>
+                                    </div>
+    
+                                    <div class="mt-3">
+                                        <p class="mb-0">Largo do Tungstênio</p>
+                                        <p>Currais-Novos - RN</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="h-100 d-flex">
+                                        <img src="assets/images/localização-largo.png" class="img-fluid object-fit-cover rounded-end-3" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="col-md-6 mt-3 mt-md-0">
+                            <div class="bg-custom-secundary-light p-3 rounded-3 h-100">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/shield-check.svg" class="me-3" style="height: 2rem;" alt="">
+                                    <h3 class="mb-0">Boas práticas na feira</h3>
+                                </div>
+
+                                <div class="mt-3">
+                                    <div class="d-flex align-items-center my-2">
+                                        <img src="assets/images/circle-check-big.svg" class="me-3" style="height: 1.3rem;" alt="ícone">
+                                        <p class="mb-0">Utilizar sacolas reutilizáveis</p>
+                                    </div>
+                                    
+                                    <div class="d-flex align-items-center my-2">
+                                        <img src="assets/images/circle-check-big.svg" class="me-3" style="height: 1.3rem;" alt="ícone">
+                                        <p class="mb-0">Mantenha o ambiente limpo</p>
+                                    </div>
+                                    
+                                    <div class="d-flex align-items-center my-2">
+                                        <img src="assets/images/circle-check-big.svg" class="me-3" style="height: 1.3rem;" alt="ícone">
+                                        <p class="mb-0">Apoie a cultura local</p>
+                                    </div>
+                                    
+                                    <div class="d-flex align-items-center my-2">
+                                        <img src="assets/images/circle-check-big.svg" class="me-3" style="height: 1.3rem;" alt="ícone">
+                                        <p class="mb-0">Apoie a cultura local</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                
+                <!-- parte do formulário de inscrição -->
+                <div class="col-md-6">
+                    <div class="bg-custom-secundary-light p-3 rounded-3 mt-4 mt-md-0">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/user.svg" class="me-3 bg-custom-primary rounded-circle p-2" alt="">
+                            <h2 class="mb-0">Quero ser expositor</h2>
+                        </div>
+                        <p>Preencha seus dados e envie a inscrição. Em até 3 dias você receberá um e-mail da nossa equipe</p>
+    
+    
+                        <form action="">
+    
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+    </main>
+    
+
+     <footer id="sobre">
+        <div class="bg-custom-primary text-white pe-3 ps-3 mb-0">
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <h3 class="display-6 fw-bold">Feira Raízes</h3>
+                    <p class="lead fs-5">Somos um movimento que busca uma alimentação saudável Para toda a comunidade.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="text-break">Navegação</h3>
+                    <div class="d-flex gap-4 flex-wrap">
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-white text-decoration-none">Início</a></li>
+                            <li><a href="#sobre" class="text-white text-decoration-none">Sobre</a></li>
+                            <li><a href="#contato" class="text-white text-decoration-none">Receitas</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#produtores" class="text-white text-decoration-none">Notícias</a></li>
+                            <li><a href="#produtores" class="text-white text-decoration-none">Como funciona</a></li>
+                            <li><a href="#produtores" class="text-white text-decoration-none">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4" id="contato">
+                    <h3 class="text-break">Fale Conosco</h3>
+                    <div class="d-flex flex-wrap">
+                        <ul class="list-unstyled">
+                            <li><p><img src="assets/images/phone.svg" class="align-bottom pe-1" alt="Telefone"> (84) 99909-2004</p></li>
+                            <li><p><img src="assets/images/mail.svg" class="align-bottom pe-1" alt="Email"> contato@feiraraizes.com.br</p></li>
+                            <li><p><img src="assets/images/instagram.svg" class="align-bottom pe-1" alt="">@feiraraizes</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

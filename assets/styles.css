@@ -22,6 +22,19 @@ html, body {
     transition: background-color 0.3s ease;
 }
 
+.custom-button-primary-outline {
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+    padding: 8px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button-primary-outline:hover {
+    background-color: var(--cor-terciaria);
+    color: white;
+}
+
 .text-custom-secundary {
     color: var(--cor-secundaria);
 }
@@ -105,4 +118,17 @@ html, body {
 .bg-custom-secundary-low {
     background-color: #fceed6;;
     color: var(--cor-alternativa);
+}
+
+.table-custom-primary thead th {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: 2px solid rgba(128, 128, 128, 0.744);
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.table-custom-primary tbody tr td{
+    border: 2px solid rgb(128, 128, 128);
+    background-color: #ffffff9d;
 }
