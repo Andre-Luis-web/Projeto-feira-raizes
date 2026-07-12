@@ -111,8 +111,8 @@ html, body {
 }
 
 .border-custom-card {
-    border: 0.1rem dashed var(--cor-terciaria);
-    border-radius: 4px;
+    border: 2px solid rgba(128, 128, 128, 0.242);
+
 }
 
 .bg-custom-secundary-low {
