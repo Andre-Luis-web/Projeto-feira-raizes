@@ -10,7 +10,7 @@
     <title>Produtos e Produtores</title>
 </head>
 <body class="bg-background">
-    <header>
+    <header id="home">
         <div class="bg-custom-primary"><!--  div com elemnto nav classe navbar para o cabeçalho da página, com a logo e os links de navegação -->
             <nav class="navbar navbar-light pe-3 ps-3">
                 <a href="">
@@ -62,220 +62,210 @@
                 </div>
             </div>
 
-            <div class="row mt-4 me-3">
+            <div class="row mt-4 me-md-3">
                 <!-- navegação -->
                  <div class="col-md-9">
                     <div class="p-3 d-flex align-items-center gap-3 flex-wrap">
                         <a href="" class="btn custom-button-primary"><img src="assets/images/window.svg" class="align-bottom me-2" alt="">Todos</a>
                         <a href="" class="btn custom-button-secundary-light"><img src="assets/images/apple.svg" class="align-bottom me-2" alt="">Frutas</a>
-                        <a href="" class="btn custom-button-secundary-light"><img src="assets/images/bean.svg" class="align-bottom me-2" alt="">Feijão</a>
+                        <a href="" class="btn custom-button-secundary-light"><img src="assets/images/bean.svg" class="align-bottom me-2" alt="">Feijões</a>
                         <a href="" class="btn custom-button-secundary-light"><img src="assets/images/leafy-green.svg" class="align-bottom me-2" alt="">Hortaliças</a>
+                        <a href="" class="btn custom-button-secundary-light"><img src="assets/images/sprout.svg" class="align-bottom me-2" alt="">Da estação</a>
                     </div>
 
                     <div class="row mt-4 p-3">
                         <div class="col-6 col-md-4 mb-4">
-                            <article class="card">
+                            <article class="card h-100 d-flex flex-column">
                                 <div class="position-relative">
-                                    <img src="assets/images/manga-espada.jpg" class="card-img-top object-fit-cover" alt="">
+                                    <img src="assets/images/manga-espada.jpg" class="card-img-top object-fit-cover w-100" style="aspect-ratio: 4/3;" alt="Manga espada">
+                                    <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
+                                        <img src="assets/images/sprout.svg" alt="ícone">
+                                        <span class="">Da estação</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title">Manga espada</h5>
+                                    <p class="card-text fw-semibold">R$ 20 <small class="fw-normal">/kg</small></p>
+                                </div>
+
+                                <div class="d-flex px-2 gap-2 flex-wrap mt-auto pb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/zé-da-manga.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="Zé da manga">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <p class="fw-semibold m-0">Zé da manga</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/map-pin.png" class="align-bottom me-1" style="width: 1rem;" alt="ícone">
+                                            <p class="mb-0 text-break">Natal - RN</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end align-items-center flex-fill">
+                                        <span class="btn btn-outline-success btn-sm">Disponível</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-md-4 mb-4">
+                            <article class="card h-100 d-flex flex-column">
+                                <div class="position-relative">
+                                    <img src="assets/images/caju.jpg" class="card-img-top object-fit-cover w-100" style="aspect-ratio: 4/3;" alt="Caju">
+                                    <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
+                                        <img src="assets/images/sprout.svg" alt="ícone">
+                                        <span class="">Da estação</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title">Caju orgânico</h5>
+                                    <p class="card-text fw-semibold">R$ 30 <small class="fw-normal">/kg</small></p>
+                                </div>
+
+                                <div class="d-flex px-2 gap-2 flex-wrap mt-auto pb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/Seu-carlos.jpg" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="Seu Carlos">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <p class="fw-semibold m-0">Seu Carlos</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/map-pin.png" class="align-bottom me-1" style="width: 1rem;" alt="ícone">
+                                            <p class="mb-0 text-break">Lagoa-Nova - RN</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end align-items-center flex-fill">
+                                        <span class="btn btn-outline-success btn-sm">Disponível</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4">
+                            <article class="card h-100 d-flex flex-column">
+                                <div class="position-relative">
+                                    <img src="assets/images/jabuticaba.png" class="card-img-top object-fit-cover w-100" style="aspect-ratio: 4/3;" alt="Jabuticaba">
+                                    <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
+                                        <img src="assets/images/sprout.svg" alt="ícone">
+                                        <span class="">Da estação</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title">Jabuticaba</h5>
+                                    <p class="card-text fw-semibold">R$ 45 <small class="fw-normal">/kg</small></p>
+                                </div>
+
+                                <div class="d-flex px-2 gap-2 flex-wrap mt-auto pb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/Seu-carlos.jpg" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="Seu Carlos">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <p class="fw-semibold m-0">Seu Carlos</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/map-pin.png" class="align-bottom me-1" style="width: 1rem;" alt="ícone">
+                                            <p class="mb-0 text-break">Lagoa-Nova - RN</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end align-items-center flex-fill">
+                                        <span class="btn btn-outline-success btn-sm">Disponível</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 mb-4">
+                            <article class="card h-100 d-flex flex-column">
+                                <div class="position-relative">
+                                    <img src="assets/images/saca-feijao-preto.png" class="card-img-top object-fit-cover w-100" style="aspect-ratio: 4/3;" alt="Saca de feijão preto">
                                     <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
                                         <img src="assets/images/sprout.svg" alt="">
                                         <span class="">Da estação</span>
                                     </div>
                                 </div>
 
-                                <div class="card-body">
-                                    <h5 class="card-title">Manga espada</h5>
-                                    <p class="card-text fw-semibold">R$ 20 <small class="fw-normal">/kg</small></p>
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title">Saca de feijão preto</h5>
+                                    <p class="card-text fw-semibold">R$ 40 <small class="fw-normal">/kg</small></p>
                                 </div>
 
-                                <div class="d-flex px-2 gap-2 flex-wrap">
+                                <div class="d-flex px-2 gap-2 flex-wrap mt-auto pb-3">
                                     <div class="flex-shrink-0">
-                                        <img src="assets/images/zé-da-manga.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="">
+                                        <img src="assets/images/Filomena-do-feijão.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="Filomena">
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <p class="fw-semibold m-0">Zé da manga</p>
+                                        <p class="fw-semibold m-0">Filomena do feijão</p>
                                         <div class="d-flex align-items-center">
-                                            <img src="assets/images/map-pin.png" class="align-bottom mb-3 me-1" style="width: 1rem;" alt="">
-                                            <p>Natal- RN</p>
+                                            <img src="assets/images/map-pin.png" class="align-bottom me-1" style="width: 1rem;" alt="ícone">
+                                            <p class="mb-0 text-break">Cerro-Corá - RN</p>
                                         </div>
                                     </div>
 
-                                    <div class="h-25 d-flex justify-content-end flex-fill">
-                                        <p class="btn btn-outline-success">Disponível</p>
+                                    <div class="d-flex justify-content-end align-items-center flex-fill">
+                                        <span class="btn btn-outline-danger btn-sm">Esgotado</span>
                                     </div>
                                 </div>
                             </article>
                         </div>
-
-                        <div class="col-6 col-md-4 mb-2">
-                            <article class="card">
+                        <div class="col-6 col-md-4 mb-4">
+                            <article class="card h-100 d-flex flex-column">
                                 <div class="position-relative">
-                                    <img src="assets/images/manga-espada.jpg" class="card-img-top object-fit-cover" alt="">
-                                    <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
-                                        <img src="assets/images/sprout.svg" alt="">
-                                        <span class="">Da estação</span>
-                                    </div>
+                                    <img src="assets/images/alface.png" class="card-img-top object-fit-cover w-100" style="aspect-ratio: 4/3;" alt="Alface">
                                 </div>
 
-                                <div class="card-body">
-                                    <h5 class="card-title">Manga espada</h5>
-                                    <p class="card-text fw-semibold">R$ 20 <small class="fw-normal">/kg</small></p>
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title">Alface orgânico</h5>
+                                    <p class="card-text fw-semibold">R$ 15 <small class="fw-normal">/UN</small></p>
                                 </div>
 
-                                <div class="d-flex px-2 gap-2 flex-wrap">
+                                <div class="d-flex px-2 gap-2 flex-wrap mt-auto pb-3">
                                     <div class="flex-shrink-0">
-                                        <img src="assets/images/zé-da-manga.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="">
+                                        <img src="assets/images/Dona-narcisa.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="">
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <p class="fw-semibold m-0">Zé da manga</p>
+                                        <p class="fw-semibold m-0">Dona Narcisa</p>
                                         <div class="d-flex align-items-center">
-                                            <img src="assets/images/map-pin.png" class="align-bottom mb-3 me-1" style="width: 1rem;" alt="">
-                                            <p>Natal- RN</p>
+                                            <img src="assets/images/map-pin.png" class="align-bottom me-1" style="width: 1rem;" alt="ícone">
+                                            <p class="mb-0 text-break">Recife - PE</p>
                                         </div>
                                     </div>
 
-                                    <div class="h-25 d-flex justify-content-end flex-fill">
-                                        <p class="btn btn-outline-success">Disponível</p>
+                                    <div class="d-flex justify-content-end align-items-center flex-fill">
+                                        <span class="btn btn-outline-success btn-sm">Disponível</span>
                                     </div>
                                 </div>
                             </article>
                         </div>
-
-                        <div class="col-6 col-md-4 mb-2">
-                            <article class="card">
+                        <div class="col-6 col-md-4 mb-4">
+                            <article class="card h-100 d-flex flex-column">
                                 <div class="position-relative">
-                                    <img src="assets/images/manga-espada.jpg" class="card-img-top object-fit-cover" alt="">
-                                    <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
-                                        <img src="assets/images/sprout.svg" alt="">
-                                        <span class="">Da estação</span>
-                                    </div>
+                                    <img src="assets/images/feijao-carioca.png" class="card-img-top object-fit-cover w-100" style="aspect-ratio: 4/3;" alt="feijão carioca">
                                 </div>
 
-                                <div class="card-body">
-                                    <h5 class="card-title">Manga espada</h5>
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title">Feijão Carioca tipo 1</h5>
                                     <p class="card-text fw-semibold">R$ 20 <small class="fw-normal">/kg</small></p>
                                 </div>
 
-                                <div class="d-flex px-2 gap-2 flex-wrap">
+                                <div class="d-flex px-2 gap-2 flex-wrap mt-auto pb-3">
                                     <div class="flex-shrink-0">
-                                        <img src="assets/images/zé-da-manga.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="">
+                                        <img src="assets/images/Filomena-do-feijão.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="Filomena">
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <p class="fw-semibold m-0">Zé da manga</p>
+                                        <p class="fw-semibold m-0">Filomena do feijão</p>
                                         <div class="d-flex align-items-center">
-                                            <img src="assets/images/map-pin.png" class="align-bottom mb-3 me-1" style="width: 1rem;" alt="">
-                                            <p>Natal- RN</p>
+                                            <img src="assets/images/map-pin.png" class="align-bottom me-1" style="width: 1rem;" alt="ícone">
+                                            <p class="mb-0 text-break">Cerro-Corá - RN</p>
                                         </div>
                                     </div>
 
-                                    <div class="h-25 d-flex justify-content-end flex-fill">
-                                        <p class="btn btn-outline-success">Disponível</p>
+                                    <div class="d-flex justify-content-end align-items-center flex-fill">
+                                        <span class="btn btn-outline-success btn-sm">Disponível</span>
                                     </div>
                                 </div>
                             </article>
                         </div>
-
-                        <div class="col-6 col-md-4 mb-2">
-                            <article class="card">
-                                <div class="position-relative">
-                                    <img src="assets/images/manga-espada.jpg" class="card-img-top object-fit-cover" alt="">
-                                    <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
-                                        <img src="assets/images/sprout.svg" alt="">
-                                        <span class="">Da estação</span>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Manga espada</h5>
-                                    <p class="card-text fw-semibold">R$ 20 <small class="fw-normal">/kg</small></p>
-                                </div>
-
-                                <div class="d-flex px-2 gap-2 flex-wrap">
-                                    <div class="flex-shrink-0">
-                                        <img src="assets/images/zé-da-manga.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <p class="fw-semibold m-0">Zé da manga</p>
-                                        <div class="d-flex align-items-center">
-                                            <img src="assets/images/map-pin.png" class="align-bottom mb-3 me-1" style="width: 1rem;" alt="">
-                                            <p>Natal- RN</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="h-25 d-flex justify-content-end flex-fill">
-                                        <p class="btn btn-outline-success">Disponível</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="col-6 col-md-4 mb-2">
-                            <article class="card">
-                                <div class="position-relative">
-                                    <img src="assets/images/manga-espada.jpg" class="card-img-top object-fit-cover" alt="">
-                                    <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
-                                        <img src="assets/images/sprout.svg" alt="">
-                                        <span class="">Da estação</span>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Manga espada</h5>
-                                    <p class="card-text fw-semibold">R$ 20 <small class="fw-normal">/kg</small></p>
-                                </div>
-
-                                <div class="d-flex px-2 gap-2 flex-wrap">
-                                    <div class="flex-shrink-0">
-                                        <img src="assets/images/zé-da-manga.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <p class="fw-semibold m-0">Zé da manga</p>
-                                        <div class="d-flex align-items-center">
-                                            <img src="assets/images/map-pin.png" class="align-bottom mb-3 me-1" style="width: 1rem;" alt="">
-                                            <p>Natal- RN</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="h-25 d-flex justify-content-end flex-fill">
-                                        <p class="btn btn-outline-success">Disponível</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="col-6 col-md-4 mb-2">
-                            <article class="card">
-                                <div class="position-relative">
-                                    <img src="assets/images/manga-espada.jpg" class="card-img-top object-fit-cover" alt="">
-                                    <div class="position-absolute top-0 start-0 translate-middle badge rounded-3 d-flex align-items-center bg-custom-secundary-low" style="margin-left: 4rem; margin-top: 1.6rem;">
-                                        <img src="assets/images/sprout.svg" alt="">
-                                        <span class="">Da estação</span>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Manga espada</h5>
-                                    <p class="card-text fw-semibold">R$ 20 <small class="fw-normal">/kg</small></p>
-                                </div>
-
-                                <div class="d-flex px-2 gap-2 flex-wrap">
-                                    <div class="flex-shrink-0">
-                                        <img src="assets/images/zé-da-manga.png" class="object-fit-cover rounded-circle img-fluid" style="width: 3rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <p class="fw-semibold m-0">Zé da manga</p>
-                                        <div class="d-flex align-items-center">
-                                            <img src="assets/images/map-pin.png" class="align-bottom mb-3 me-1" style="width: 1rem;" alt="">
-                                            <p>Natal- RN</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="h-25 d-flex justify-content-end flex-fill">
-                                        <p class="btn btn-outline-success">Disponível</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                        
 
                     </div>
                  </div>
@@ -337,7 +327,7 @@
                     <div class="border-bottom border-2 border-secondary pb-2 mt-4">
                         <div class="d-flex">
                            <div>
-                               <img src="assets/images/Dona-narcisa.png" class="img-fluid object-fit-cover rounded-circle" style="width: 12rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="">
+                               <img src="assets/images/Dona-narcisa.png" class="img-fluid object-fit-cover rounded-circle" style="width: 12rem; max-width: 100%; object-position: top; aspect-ratio: 1/1;" alt="Narcisa">
                            </div>
                            
                            <div class="px-4 w-100">
