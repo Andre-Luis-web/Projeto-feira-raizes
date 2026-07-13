@@ -132,3 +132,55 @@ html, body {
     border: 2px solid rgb(128, 128, 128);
     background-color: #ffffff9d;
 }
+
+/* importei as configurações de botão do bootstrap para personalizá-lo */
+.btn-custom-brown-outline {
+    --bs-btn-color: #974115;
+  --bs-btn-border-color: #974115;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #974115;
+  --bs-btn-hover-border-color: #974115;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #974115;
+  --bs-btn-active-border-color: #974115;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #974115;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #974115;
+  --bs-gradient: none;
+}
+
+.btn-custom-green-outline {
+    --bs-btn-color: #0e2903;
+  --bs-btn-border-color: #0e2903;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0e2903;
+  --bs-btn-hover-border-color: #0e2903;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0e2903;
+  --bs-btn-active-border-color: #0e2903;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #0e2903;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #0e2903;
+  --bs-gradient: none;
+}
+
+.btn-custom-orange-outline {
+    --bs-btn-color: #ff4d00;
+  --bs-btn-border-color: #ff4d00;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ff4d00;
+  --bs-btn-hover-border-color: #ff4d00;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ff4d00b7;
+  --bs-btn-active-border-color: #ff4d00;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #ff4d00;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #ff4d00;
+  --bs-gradient: none;
+}
