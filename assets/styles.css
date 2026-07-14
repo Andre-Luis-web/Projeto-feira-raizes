@@ -115,6 +115,10 @@ html, body {
 
 }
 
+.border-custom-card-red-dashed {
+    border: 2px dashed #d51212c3;
+}
+
 .bg-custom-secundary-low {
     background-color: #fceed6;;
     color: var(--cor-alternativa);
